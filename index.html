@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="side-bar" id="side-bar">
+            <div class="nav-header">
+                <img src="images/miyamura.png">
+                <span></span>
+                <h2>Pravar.</h2>
+                <ion-icon name="chevron-back-outline" id="icon"></ion-icon>
+            </div>
+
+            <nav>
+                <ul>
+                    <li>
+                        <ion-icon name="grid-outline"></ion-icon>
+                        <span>Dashboard</span>
+                        <ion-icon name="options-outline"></ion-icon>
+                    </li>
+
+                    <li>
+                        <ion-icon name="folder-outline"></ion-icon>
+                        <span>Project</span>
+                    </li>
+                    
+                    <li>
+                        <ion-icon name="star-outline"></ion-icon>
+                        <span>Starred</span>
+                    </li>
+                        
+                    <li>
+                        <ion-icon name="analytics-outline"></ion-icon>
+                        <span>Analytics</span>
+                    </li>
+
+                    <li>
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <span>Mail</span>
+                    </li>
+
+                    <li>
+                        <ion-icon name="calendar-outline"></ion-icon>
+                        <span>Calendar</span>
+                        <ion-icon name="add-circle-outline"></ion-icon>
+                    </li>
+
+                    <li>
+                        <ion-icon name="notifications-outline"></ion-icon>
+                        <span>Notification</span>
+                        <span class="dot"></span>
+                    </li>   
+                </ul>
+            </nav>
+
+            <hr>
+
+            <div class="setting">
+                <nav>
+                    <ul>
+                        <li>
+                            <ion-icon name="settings-outline"></ion-icon>   
+                            <span>Settings</span>
+                        </li>
+
+                        <li>
+                            <ion-icon name="help-outline"></ion-icon>
+                            <span>Help</span>
+                        </li>
+
+                        <li>
+                            <ion-icon name="log-out-outline"></ion-icon>
+                            <span>Logout</span>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        let sidebar = document.getElementById('side-bar');
+        let icon = document.getElementById('icon');
+
+        icon.onclick = () => {
+            sidebar.classList.toggle('toggle');
+            icon.classList.toggle('rotate-icon');
+        }
+
+    </script>
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/63090d5f16.js" crossorigin="anonymous"></script>   
+    <script src="script.js"></script>
+</body>
+</html>
